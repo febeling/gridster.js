@@ -59,8 +59,11 @@
                 widget_base_dimensions: [100, 55],
                 widget_margins: [5, 5],
                 draggable: {
+                  start: function() {
+                    console.log("start grid 1");
+                  },
                   stop: function() {
-                    console.log("grid 1");
+                    console.log("stop grid 1");
                   }
                 }
             }).data('gridster');
@@ -70,6 +73,9 @@
                 widget_base_dimensions: [200, 110],
                 widget_margins: [10, 10],
                 draggable: {
+                  start: function() {
+                    console.log("start grid 2");
+                  },
                   stop: function() {
                     console.log("grid 2");
                   }
